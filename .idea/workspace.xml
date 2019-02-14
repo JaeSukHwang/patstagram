@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d4ae3b5-ce0b-44f6-bd6e-d571594ead52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/403_csrf.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/500.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/account_inactive.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/email.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/email_confirm.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/logout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_change.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_reset.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_reset_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_reset_from_key.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_reset_from_key_done.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/password_set.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/signup_closed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/verification_sent.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/account/verified_email_required.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/base.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/pages/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/pages/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/users/user_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/users/user_form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/templates/users/user_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patstagram/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/patstagram/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patstagram/images/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/patstagram/images/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patstagram/images/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/patstagram/images/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
