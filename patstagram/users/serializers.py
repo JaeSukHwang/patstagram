@@ -5,7 +5,7 @@ from patstagram.images import serializers as images_serailizer
 
 class UserProfileSerializer(serializers.ModelSerializer):
 
-    images = images_serailizer.UserProfileImageSerializer(many=True)
+    images = images_serailizer.CountImageSerializer(many=True)
 
     class Meta:
         model = models.User
