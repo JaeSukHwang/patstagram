@@ -73,6 +73,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     'patstagram.users.apps.UsersAppConfig',
     'patstagram.images.apps.ImagesConfig',
+    'patstagram.notifications.apps.NotificationsConfig',
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
