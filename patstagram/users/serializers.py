@@ -5,7 +5,7 @@ from patstagram.images import serializers as images_serailizer
 
 class UserProfileSerializer(serializers.ModelSerializer):
 
-    images = images_serailizer.CountImageSerializer(many=True)
+    images = images_serailizer.CountImageSerializer(many=True, read_only=True)
     post_count = serializers.ReadOnlyField()
     following_count = serializers.ReadOnlyField()
     followers_count = serializers.ReadOnlyField()

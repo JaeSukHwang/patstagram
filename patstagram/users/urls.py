@@ -11,4 +11,6 @@ urlpatterns = [
     re_path(r'^(?P<username>\w+)/password/$', view=views.ChangePassword.as_view(), name="change"),
     re_path(r'^(?P<username>\w+)/followers/$', view=views.UserFollowers.as_view(), name="user_followers"),
     re_path(r'^(?P<username>\w+)/following/$', view=views.UserFollowing.as_view(), name="user_following"),
+    path("login/facebook/", view=views.FacebookLogin.as_view(), name="fb_login"),
+
 ]
