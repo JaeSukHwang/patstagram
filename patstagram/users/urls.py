@@ -8,6 +8,7 @@ urlpatterns = [
     re_path(r'^(?P<user_id>[0-9]+)/unfollow/$', view=views.UnFollowUser.as_view(), name="unfollow_user"),
     path("search/", view=views.Search.as_view(), name="search"),    
     re_path(r'^(?P<username>\w+)/$', view=views.UserProfile.as_view(), name="user_profile"),
+    re_path(r'^(?P<username>\w+)/password/$', view=views.ChangePassword.as_view(), name="change"),
     re_path(r'^(?P<username>\w+)/followers/$', view=views.UserFollowers.as_view(), name="user_followers"),
     re_path(r'^(?P<username>\w+)/following/$', view=views.UserFollowing.as_view(), name="user_following"),
 ]
