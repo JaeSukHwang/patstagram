@@ -1,12 +1,13 @@
 import React from "react";
 import "./styles.scss";
+import PropTypes from "prop-types";
 
 const Footer = (props, context) => (
     <footer className="footer">
         <div className="column">
             <nav className="nav">
                 <ul className="list">
-                    <li className="listItem">About us</li>
+                    <li className="listItem">{context.t("About Us")}</li>
                     <li className="listItem">Support</li>
                     <li className="listItem">Github</li>
                     <li className="listItem">Privacy</li>
@@ -19,5 +20,9 @@ const Footer = (props, context) => (
         </div>
     </footer>
 );
+
+Footer.contextTypes = {
+    t : PropTypes.func.isRequired
+};
 
 export default Footer;

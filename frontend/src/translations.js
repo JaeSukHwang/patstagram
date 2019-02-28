@@ -1,5 +1,6 @@
 export const translations = {
     es: {
-        "Login in" : "로그인"
+        "About Us" : "우리에 대해 소개하기"
+
     }
 }
