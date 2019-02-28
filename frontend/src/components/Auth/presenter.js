@@ -9,12 +9,13 @@ const Auth = (props, context) => (
         </div>
         <div className="column">
             <div className="whiteBox formBox" >
+                <img src={require("images/logo.png")} alt="Logo" />
                 {props.action == "login" && <LoginForm />}
                 {props.action == "signup" && <SignupForm/>}
             </div>    
             <div className="whiteBox">
                 {props.action == "login" && (
-                                <p>
+                                <p >
                                     계정이 없으신가요?{" "}
                                     <span
                                         className="changeLink"
@@ -37,7 +38,7 @@ const Auth = (props, context) => (
                             )}
             </div>
             <div className="appBox">
-                <span>#todo: 시바스타그램 앱버전 구현하기!</span>
+                <span className="todo">#todo: 시바스타그램 앱버전 구현하기!</span>
                 <div className="appstores">
                     <img
                         src={require("images/ios.png")}
