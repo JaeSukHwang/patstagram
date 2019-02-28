@@ -1,6 +1,12 @@
 export const translations = {
-    es: {
-        "About Us" : "우리에 대해 소개하기"
+    kr: {
+        "About Us" : '',
+        "Support": '',
+        "Github": '',
+        "Privacy": '',
+        "Terms": '',
+    },
+    'options' : {
 
-    }
+    },
 }
