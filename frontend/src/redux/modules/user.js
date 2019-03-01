@@ -28,7 +28,6 @@ function facebookLogin(access_token) {
             .then(response => response.json())
             .then(json => {
                 if (json.token) {
-                    localStorage.setItem("jwt", json.token);
                     dispatch(saveToken(json.token));
                 }
             })
@@ -55,6 +54,34 @@ function usernameLogin(username, password) {
             }
         })
         .catch(err => console.log(err));
+    }
+}
+
+
+function createAccount(email, name, password, username) {
+    return function(dispatch) {
+        fetch("/rest-auth/registration/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                username,
+                password1: password,
+                password2: password,
+                email,
+                name
+            })
+        })
+            .then(response => response.json())
+            .then(json => {
+                if(json.token) {
+                    dispatch(saveToken(json.token));
+                }
+                else{
+                    document.getElementById('error').innerHTML ="비밀번호는 여덟자리 이상이여야 되고 숫자로만 이루어지면 안됩니다";
+                }
+            })
     }
 }
 
@@ -91,7 +118,8 @@ function applySetToken(state, action) {
 
 const actionCreators = {
     facebookLogin,
-    usernameLogin
+    usernameLogin,
+    createAccount
 };
 
 export { actionCreators };
