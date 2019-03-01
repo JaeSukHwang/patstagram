@@ -11,11 +11,11 @@ const Auth = (props, context) => (
         <div className="column">
             <div className="whiteBox formBox" >
                 <img src={require("images/logo.png")} alt="Logo" />
-                {props.action == "login" && <LoginForm />}
-                {props.action == "signup" && <SignupForm/>}
+                {props.action === "login" && <LoginForm />}
+                {props.action === "signup" && <SignupForm/>}
             </div>    
             <div className="whiteBox">
-                {props.action == "login" && (
+                {props.action === "login" && (
                                 <p >
                                     계정이 없으신가요?{" "}
                                     <span
@@ -26,7 +26,7 @@ const Auth = (props, context) => (
                                     </span>
                                 </p>
                             )}
-                {props.action == "signup" && (
+                {props.action === "signup" && (
                                 <p>
                                     계정이 있으신가요?{" "}
                                     <span
