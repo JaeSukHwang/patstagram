@@ -31,7 +31,8 @@ LoginForm.propTypes = {
     handleInputChange: PropTypes.func.isRequired,
     usernameValue: PropTypes.string.isRequired,
     passwordValue: PropTypes.string.isRequired,
-    handleSubmit: PropTypes.func.isRequired
+    handleSubmit: PropTypes.func.isRequired,
+    handleFacebookLogin: PropTypes.func.isRequired
 };
 
 export default LoginForm;
