@@ -17,7 +17,7 @@ const Navigation = (props) => (
                 </Link>
             </div>
             <div className="column">
-                <input type="text" placeholder="Search" className="serachInput"
+                <input type="text" placeholder="Search" className="searchInput"
                 />
             </div>
             <div className="column">
