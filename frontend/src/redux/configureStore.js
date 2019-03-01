@@ -4,6 +4,7 @@ import { routerMiddleware, connectRouter } from "connected-react-router";
 import {createBrowserHistory} from "history"; 
 import { composeWithDevTools } from "redux-devtools-extension";
 import { i18nState } from "redux-i18n";
+import photos from "redux/modules/photos";
 import user from "redux/modules/user";
 
 
@@ -20,6 +21,7 @@ if(env==="development"){
 
 const reducer = combineReducers({
     user,
+    photos,
     router : connectRouter(history),
     i18nState
 })
