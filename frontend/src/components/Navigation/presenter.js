@@ -26,7 +26,7 @@ const Navigation = (props) => (
                         <Ionicon icon="ios-compass-outline" fontSize="28px" color="black" />
                     </Link>
                 </div>
-                <div className={StyleSheet.navIcon}>
+                <div className="navIcon">
                     <Ionicon icon="ios-heart-outline" fontSize="28px" color="black" />
                 </div>
                 <div className="navIcon">
