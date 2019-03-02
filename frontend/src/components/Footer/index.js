@@ -7,7 +7,7 @@ const Footer = (props, context) => (
         <div className="column">
             <nav className="nav">
                 <ul className="list">
-                    <li className="listItem">{context.t("About Us")}</li>
+                    <li className="listItem">{context.t("About Me")}</li>
                     <li className="listItem">{context.t("Support")}</li>
                     <li className="listItem">{context.t("Github")}</li>
                     <li className="listItem">{context.t("Privacy")}</li>
