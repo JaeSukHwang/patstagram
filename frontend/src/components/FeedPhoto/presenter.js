@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "./styles.scss";
 import PhotoActions from "components/PhotoActions";
 import PhotoComments from "components/PhotoComments";
+import TimeStamp from "components/TimeStamp";
 
 const FeedPhoto = (props) => {
     return (
@@ -25,6 +26,7 @@ const FeedPhoto = (props) => {
                     creator = {props.creator.username}
                     comments={props.comments}
                 />
+                <TimeStamp time={props.natural_time} />
             </div>
         </div>
     );
