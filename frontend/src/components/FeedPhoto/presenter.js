@@ -20,7 +20,9 @@ const FeedPhoto = (props) => {
                     <span className="location">{props.location}</span>
                 </div>
             </header >
-            <img className="mainPhoto" src={props.file} alt={props.caption} />
+            <div className="photoContainer">
+                <img className="mainPhoto" src={props.file} alt={props.caption} />
+            </div>
             <div className="meta">
                 <PhotoActions number={props.like_count} />
                 <PhotoComments
