@@ -1,10 +1,34 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./styles.scss";
+import PhotoActions from "components/PhotoActions";
+import PhotoComments from "components/PhotoComments";
 
 const FeedPhoto = (props) => {
-    return <div className="feedPhoto">"hello"</div>;
-}
+    return (
+        <div className="feedPhoto">
+            <header>
+                <img
+                    src={props.creator.profile_image || require("images/noPhoto.jpg")}
+                    alt={props.creator.username}
+                />
+                <div>
+                    <span>{props.creator.username}</span>
+                    <span>{props.location}</span>
+                </div>
+            </header>
+            <img src={props.file} alt={props.caption} />
+            <div>
+                <PhotoActions number={props.like_count} />
+                <PhotoComments
+                    caption = {props.caption}
+                    creator = {props.creator.username}
+                    comments={props.comments}
+                />
+            </div>
+        </div>
+    );
+};
 
 FeedPhoto.propTypes = {
     creator: PropTypes.shape({
