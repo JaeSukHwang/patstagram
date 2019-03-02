@@ -4,7 +4,7 @@ import "./styles.scss";
 
 const CommentBox = (props) => (
     <form>
-        <textarea placeholder="댓글을 추가하세요..." />
+        <textarea className="input" placeholder="댓글을 추가하세요..." />
     </form>
 );
 
