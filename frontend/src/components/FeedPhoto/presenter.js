@@ -47,6 +47,7 @@ const FeedPhoto = (props) => {
 };
 
 FeedPhoto.propTypes = {
+    id: PropTypes.number.isRequired,
     creator: PropTypes.shape({
         profile_image: PropTypes.string,
     username: PropTypes.string.isRequired
@@ -69,13 +70,6 @@ FeedPhoto.propTypes = {
     seeingLikes: PropTypes.bool.isRequired,
     openLikes: PropTypes.func.isRequired,
     closeLikes: PropTypes.func.isRequired,
-    likes: PropTypes.arrayOf(
-        PropTypes.shape({
-            profile_image: PropTypes.string,
-            username: PropTypes.string.isRequired,
-            name: PropTypes.string
-        }).isRequired
-    )
 };
 
 export default FeedPhoto;

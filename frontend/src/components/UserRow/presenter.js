@@ -23,9 +23,11 @@ const UserRow = props => (
 
 UserRow.propTypes = {
     user: PropTypes.shape({
+        id:PropTypes.number.isRequired,
         profile_image: PropTypes.string,
         username: PropTypes.string.isRequired,
-        name:PropTypes.string
+        name:PropTypes.string,
+        following: PropTypes.bool.isRequired
     }).isRequired,
     big: PropTypes.bool
 };
