@@ -14,7 +14,12 @@
         margin-left: 10px;
         .username {
           font-weight: 600;
+          display: block;
+          margin-bottom: 3px;
           margin-right: 10px;
+        }
+        .name{
+          color:$dark-grey;
         }
       }
       .bigAvatar {

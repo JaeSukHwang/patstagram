@@ -15,7 +15,8 @@ const UserRow = props => (
             </div>
         </div>
         <span className="column">
-            <button className="button">팔로우</button>
+            <button className="button" onClick={props.handleClick}>
+            {props.user.following ? "언팔로우" : "팔로우" }</button>
         </span>
     </div>
 );
@@ -29,7 +30,8 @@ UserRow.propTypes = {
         name:PropTypes.string,
         following: PropTypes.bool.isRequired
     }).isRequired,
-    big: PropTypes.bool
+    big: PropTypes.bool,
+    handleClick: PropTypes.func.isRequired
 };
 
 
