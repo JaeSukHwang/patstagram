@@ -40,7 +40,7 @@ const FeedPhoto = (props) => {
                 <CommentBox photoId={props.id}/>
             </div>
             {props.seeingLikes && (
-                <UserList title={"좋아요"} closeLikes={props.closeLikes} userList={props.likes}/>
+                <UserList title={"좋아요"} closeLikes={props.closeLikes} />
             )}
         </div>
     );
@@ -70,13 +70,7 @@ FeedPhoto.propTypes = {
     seeingLikes: PropTypes.bool.isRequired,
     openLikes: PropTypes.func.isRequired,
     closeLikes: PropTypes.func.isRequired,
-    likes: PropTypes.arrayOf(
-        PropTypes.shape({
-            profile_image:PropTypes.string,
-            username: PropTypes.string.isRequired,
-            name: PropTypes.string
-        }).isRequired
-    )
+    
 };
 
 export default FeedPhoto;
