@@ -9,19 +9,22 @@ const UserList = props => (
         <div className="overlay" />
         <div className="box">
             <header className="header">
-                <h4>{props.title}</h4>
-                <Ionicon icon="md-close" fontSize="20px" color="black" />
+                <h4 className="title">{props.title}</h4>
+                <span onClick={props.closeLikes}>
+                    <Ionicon icon="md-close" fontSize="20px" color="black" />
+                </span>
             </header>
             <div className="content">{props.loading ? <Loading/> : null}</div>
         </div>
     </div>
 );
 
-const LoadingUserList = props =>
-    (UserList.propTypes = {
-        title: PropTypes.string.isRequired,
-        loading: PropTypes.bool.isRequired,
-        users:PropTypes.array
-    });
+UserList.propTypes = {
+    title: PropTypes.string.isRequired,
+    loading: PropTypes.bool.isRequired,
+    users:PropTypes.array,
+    closeLikes: PropTypes.func.isRequired,
+    userList: PropTypes.array
+}
 
 export default UserList;
