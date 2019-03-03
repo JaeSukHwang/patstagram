@@ -21,7 +21,7 @@ const Navigation = (props) => (
             </div>
             <div className="column">
                 <div className="navIcon">
-                    <Link to = "/expore">
+                    <Link to = "/explore">
                         <Ionicon icon="ios-compass-outline" fontSize="28px" color="black" />
                     </Link>
                 </div>
