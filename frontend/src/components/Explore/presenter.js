@@ -13,13 +13,13 @@ const Explore = props => {
 };
 
 const LoadingExplore = props => (
-  <div className="feed">
+  <div className="explore">
     <Loading />
   </div>
 );
 
 const RenderExplore = props => (
-  <div className="feed">
+  <div className="explore">
     {props.userList.map(user => (
       <UserRow big={true} user={user} key={user.id} />
     ))}
