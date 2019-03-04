@@ -4,21 +4,28 @@ import "./styles.scss";
 import Loading from "components/Loading";
 import UserRow from "components/UserRow";
 
-const Explore = props => {
-    if(props.loading) {
-        return <LoadingExplore />
-    } else if (props.userList) {
-        return <RenderExplore {...props} />;
-    }
+const Search = (props) => {
+    return (
+        <div className="search">
+            <div className="section">
+                <h4 className="title">Users</h4>
+                {props.loading && <Loading/>}
+                {!props.loading && props.userList.length < 1 && (<NotFound text={"데이터가 없습니다"} />
+                )}
+                {!props.loading && props.userList.length > 0 && (<RenderUserSearch userList={props.userList} />
+                )}
+            </div>
+            {/* <div className="section">
+                <h4 className="title">Photos</h4>
+                {props.loading && <Loading/>}
+                {!props.loading && props.imageList.length < 1 && (<NotFound text={"데이터가 없습니다"} />
+                )}
+            </div> */}
+        </div>
+    );
 };
 
-const LoadingExplore = props => (
-    <div className="search">
-        <Loading />
-    </div>
-);
-
-const RenderExplore = props => (
+const RenderUserSearch = props => (
     <div className="search">
         {props.userList.map(user => (
             <UserRow big={true} user={user} key={user.id} />
@@ -26,9 +33,12 @@ const RenderExplore = props => (
     </div>
 );
 
-Explore.propTypes = {
+const NotFound = props => <span className="notFound">{props.text}</span>
+
+Search.propTypes = {
     loading: PropTypes.bool.isRequired,
-    feed: PropTypes.array
+    imageList: PropTypes.array,
+    userList: PropTypes.array    
 };
 
-export default Explore;
+export default Search;
