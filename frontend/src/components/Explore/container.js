@@ -12,9 +12,9 @@ class Container extends Component {
   };
   componentDidMount() {
     const { getExplore } = this.props;
-    if (!this.props.userList) {
+   
       getExplore();
-    } else {
+      if(this.props.userList){
       this.setState({
         loading: false
       });
