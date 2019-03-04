@@ -1,6 +1,7 @@
 import React from "react";
 import Ionicon from "react-ionicons";
 import {Link} from "react-router-dom";
+import PropTypes from "prop-types";
 import "./styles.scss";
 
 const Navigation = (props) => (
@@ -16,8 +17,10 @@ const Navigation = (props) => (
                 </Link>
             </div>
             <div className="column">
-                <input type="text" placeholder="Search" className="searchInput"
-                />
+                <form onSubmit={props.onSubmit}>
+                    <input type="text" placeholder="Search" className="searchInput" value={props.value} onChange={props.onInputChange}
+                    />
+                </form>    
             </div>
             <div className="column">
                 <div className="navIcon">
@@ -39,3 +42,9 @@ const Navigation = (props) => (
 );
 
 export default Navigation;
+
+Navigation.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
+    onInputChange: PropTypes.func.isRequired,
+    value: PropTypes.string.isRequired
+}
