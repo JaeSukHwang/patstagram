@@ -15,12 +15,6 @@ const Search = (props) => {
                 {!props.loading && props.userList.length > 0 && (<RenderUserSearch userList={props.userList} />
                 )}
             </div>
-            {/* <div className="section">
-                <h4 className="title">Photos</h4>
-                {props.loading && <Loading/>}
-                {!props.loading && props.imageList.length < 1 && (<NotFound text={"데이터가 없습니다"} />
-                )}
-            </div> */}
         </div>
     );
 };
@@ -28,7 +22,7 @@ const Search = (props) => {
 const RenderUserSearch = props => (
     <div className="search">
         {props.userList.map(user => (
-            <UserRow big={true} user={user} key={user.id} />
+            <UserRow user={user} key={user.id} />
         ))}
     </div>
 );

@@ -6,7 +6,7 @@ const mapStateToProps = (state, ownProps) => {
     const {user: {userList, imageList}} = state;
     return {
         userList,
-        imageList
+        imageList,
     };
 };
 
