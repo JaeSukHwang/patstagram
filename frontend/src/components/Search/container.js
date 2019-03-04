@@ -8,8 +8,7 @@ class Container extends Component {
     };
     static propTypes = {
         searchByTerm: PropTypes.func.isRequired,
-        userList: PropTypes.array,
-        imageList: PropTypes.array
+        userList: PropTypes.array
     };
     componentDidMount() {
         const { searchByTerm } = this.props;
@@ -23,7 +22,7 @@ class Container extends Component {
       }
     componentWillReceiveProps = nextProps => {
         const { searchByTerm, pathname } = this.props;
-        if(nextProps.userList && nextProps.imageList) {
+        if(nextProps.userList) {
             this.setState({
                 loading: false
             });
@@ -33,8 +32,8 @@ class Container extends Component {
         }
     };
     render() {
-        const {userList, imageList} = this.props;
-        return <Explore {...this.state} userList={userList} imageList={imageList} />;
+        const {userList} = this.props;
+        return <Explore {...this.state} userList={userList} />;
     }
 }
 

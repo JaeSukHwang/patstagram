@@ -31,7 +31,6 @@ const NotFound = props => <span className="notFound">{props.text}</span>
 
 Search.propTypes = {
     loading: PropTypes.bool.isRequired,
-    imageList: PropTypes.array,
     userList: PropTypes.array    
 };
 
