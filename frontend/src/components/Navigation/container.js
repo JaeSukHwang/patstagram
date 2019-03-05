@@ -11,6 +11,7 @@ class Container extends Component {
     }
     render() {
         return <Navigation
+         onClick={this._onClick}
          onSubmit={this._onSubmit}
          onInputChange={this._onInputChange}
          value={this.state.term}
@@ -30,6 +31,10 @@ class Container extends Component {
         this.setState({
             term: ""
           });
+    }
+    _onClick = event => {
+        const {logout} = this.props;
+        logout()
     }
 }
 

@@ -28,12 +28,9 @@ const Navigation = (props) => (
                         <Ionicon icon="ios-compass-outline" fontSize="28px" color="black" />
                     </Link>
                 </div>
-                <div className="navIcon">
-                    <Ionicon icon="ios-heart-outline" fontSize="28px" color="black" />
-                </div>
-                <div className="navIcon">
-                    <Link to = "/profile">
-                        <Ionicon icon="ios-person-outline" fontSize="32px" color="black" />
+                <div className="navIcon" onClick={props.onClick}>
+                    <Link to = "/">
+                        <Ionicon icon="ios-log-out" fontSize="32px" color="black" />
                     </Link>
                 </div>
             </div>
