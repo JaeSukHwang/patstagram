@@ -107,7 +107,7 @@ function usernameLogin(username, password) {
   };
 }
 
-function createAccount(username, password, email, name) {
+function createAccount(email, name, username, password) {
   return dispatch => {
     fetch("/rest-auth/registration/", {
       method: "POST",
@@ -122,8 +122,10 @@ function createAccount(username, password, email, name) {
         name
       })
     })
-      .then(response => response.json())
+      .then(response => 
+        response.json())
       .then(json => {
+        console.log(json)
         if (json.token) {
           dispatch(saveToken(json.token));
         }

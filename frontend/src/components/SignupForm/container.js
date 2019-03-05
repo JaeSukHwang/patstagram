@@ -33,7 +33,8 @@ class Container extends Component {
         const { email, name, password, username } = this.state;
         const { createAccount } = this.props;
         event.preventDefault();
-        createAccount(email, name, password, username);
+        console.log(this.state)
+        createAccount(email, name, username, password);
     };
     _handleFacebookLogin = response => {
         const {facebookLogin} = this.props;
