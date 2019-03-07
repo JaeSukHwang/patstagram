@@ -11,6 +11,7 @@ const LoginForm = props => (
             onChange={props.handleInputChange} name="username" value={props.usernameValue}/>
             <input type="password" placeholder="비밀번호" className="textInput" 
             onChange={props.handleInputChange} name="password" value={props.passwordValue}/>
+            <div className="error" id="loginerror"></div>
             <input type="submit" value="로그인" className="button"/>
         </form>
         <span className="divider">또는</span>

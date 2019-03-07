@@ -25,7 +25,7 @@ const SignupForm = props => (
             value={props.usernameValue} onChange={props.handleInputChange} name="username"/>
             <input type="password" placeholder="비밀번호" className="textInput"
             value={props.passwordValue} onChange={props.handleInputChange} name="password"/>
-            <div className="error" id="error"></div>
+            <div className="error" id="signuperror"></div>
             <input type="submit" value="가입" className="button" />
         </form>
         <p className="terms">

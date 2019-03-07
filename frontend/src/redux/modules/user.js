@@ -102,6 +102,9 @@ function usernameLogin(username, password) {
         if (json.token) {
           dispatch(saveToken(json.token));
         }
+        else{
+          document.getElementById('loginerror').innerHTML ="아이디 또는 비밀번호가 일치하지 않습니다";
+        }
       })
       .catch(err => console.log(err));
   };
@@ -129,6 +132,9 @@ function createAccount(email, name, username, password) {
         if (json.token) {
           dispatch(saveToken(json.token));
         }
+        else{
+          document.getElementById('signuperror').innerHTML ="비밀번호는 여덟자리 이상이여야 되고 숫자로만 이루어지면 안됩니다";
+      }
       })
       .catch(err => console.log(err));
   };
